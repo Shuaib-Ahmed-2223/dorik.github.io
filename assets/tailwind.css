@@ -214,6 +214,9 @@
   .z-10 {
     z-index: 10;
   }
+  .z-11 {
+    z-index: 11;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -301,6 +304,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .inline {
     display: inline;
   }
@@ -330,8 +336,14 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-\[30px\] {
+    height: 30px;
+  }
   .h-\[60px\] {
     height: 60px;
+  }
+  .h-\[470px\] {
+    height: 470px;
   }
   .h-full {
     height: 100%;
@@ -383,6 +395,9 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-\[30px\] {
+    width: 30px;
   }
   .w-\[60px\] {
     width: 60px;
@@ -436,6 +451,9 @@
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -474,6 +492,18 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-11 {
+    gap: calc(var(--spacing) * 11);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -519,6 +549,12 @@
       margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
+  .rounded-\[20px\] {
+    border-radius: 20px;
   }
   .rounded-\[110px\] {
     border-radius: 110px;
@@ -596,6 +632,9 @@
   .bg-\[\#2b2b2b\] {
     background-color: #2b2b2b;
   }
+  .bg-\[\#8C3BFC\] {
+    background-color: #8C3BFC;
+  }
   .bg-\[\#33b17e\] {
     background-color: #33b17e;
   }
@@ -653,6 +692,9 @@
   .object-contain {
     object-fit: contain;
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -688,6 +730,9 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-\[30px\] {
+    padding-inline: 30px;
   }
   .\!py-2 {
     padding-block: calc(var(--spacing) * 2) !important;
@@ -787,6 +832,9 @@
   .text-\[24px\] {
     font-size: 24px;
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
   .text-\[50px\] {
     font-size: 50px;
   }
@@ -815,6 +863,10 @@
   .leading-\[16px\] {
     --tw-leading: 16px;
     line-height: 16px;
+  }
+  .leading-\[18px\] {
+    --tw-leading: 18px;
+    line-height: 18px;
   }
   .leading-\[20px\] {
     --tw-leading: 20px;
@@ -933,6 +985,13 @@
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .hover\:bg-\[\#27A6FE\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #27A6FE;
+      }
+    }
   }
   .md\:w-1\/3 {
     @media (width >= 48rem) {
